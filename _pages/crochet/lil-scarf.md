@@ -27,7 +27,7 @@ nav_exclude: true
 
 ## Lil' Scarf Pattern – with video links!
 
-### Get Started
+**Get Started**
 
 1. Make a **slip knot**, chain (ch) 10, then make chain stitches until your chain is 4 inches long.
 
@@ -41,7 +41,7 @@ nav_exclude: true
 
 3. Work in rows until your scarf measures **4 inches** from your starting chain.
 
-### Shape the Scarf
+**Shape the Scarf**
 
 4. **Decrease row:** Work single crochet decreases (Sc2tog) in the first 2 sts and the last 2 sts of the row. [8 sc] *( __ - 2 sc)*
    * [How to decrease in single crochet](https://www.woolandthegang.com/en/tutorial/how-to-decrease-in-single-crochet)
@@ -50,14 +50,14 @@ nav_exclude: true
 7. Single crochet the final two stitches together. 
 8. **Fasten off** by cutting the yarn about 6 inches from your hook, then pull the final loop through.
 
-### Make the Second Half
+**Make the Second Half**
 
 9. Single crochet into the other side of each foundation chain stitch.
 10. Decide on your preferred scarf size:
    - For a **single wrap lil’ scarf** (~30 inch scarf), follow steps 2–9. 
    - For a **double wrap lil’ scarf** (~40 inch scarf), sc in rows until the scarf measures 14 inches from the foundation chain, then follow steps 4–11.
 
-### Create a Border
+**Create a Border**
 
 11. With border yarn, ch 1, then single crochet evenly around the edges of the scarf, placing 3 sc at each pointed end.
    * [How to add a single crochet border](https://www.woolandthegang.com/en/tutorial/how-to-make-a-single-crochet-edge-trim)
