@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&family=Playfair+Display:wght@400;600&family=Poppins:wght@400;600&family=Lora:wght@400;600&family=Raleway:wght@400;600&family=Quicksand:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&family=Cabin:wght@400;600&family=Oswald:wght@400;600&family=Lora:wght@400;600&family=Raleway:wght@400;600&family=Quicksand:wght@400;600&display=swap");
+
+$base-font-family: 'Cabin', sans-serif !default; // Changed to Roboto for body text
+$heading-font-family: 'Montserrat', sans-serif !default; // Added for headings
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+
+$spacing-unit:     30px !default;
+
+$text-color:       #333 !default;
+$background-color: #fdfdfd !default;
+// $brand-color:      #ff5733 !default;
+$brand-color:      #ff775a !default;
+$brand-color-tone: #d07562 !default;
+$brand-color-tint: #ff775a !default;
+$brand-color-shade: #be5039 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    900px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $base-font-family;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 32px;
+  color: $text-color;
+  margin-bottom: $spacing-unit; // Added spacing after h2
+}
+
+h3 {
+  // font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: $grey-color-dark;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .homepage-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .homepage-container img {
+    width: 180px; /* Reduce image size */
+    margin-right: 0; /* Remove margin for better centering */
+    margin-bottom: 20px; /* Space between image and text */
+  }
+
+  .homepage-container h2 {
+    font-size: 24px; /* Smaller heading */
+  }
+
+  .homepage-container h3 {
+    font-size: 16px; /* Adjust subheading */
+  }
+}
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
+;

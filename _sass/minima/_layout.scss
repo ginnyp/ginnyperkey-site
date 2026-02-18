@@ -1,0 +1,455 @@
+/**
+ * Site header
+ */
+.site-header {
+  border-top: 5px solid $brand-color-tone;
+  border-bottom: 2px dotted $brand-color;
+  min-height: $spacing-unit * 1.865;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-title {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: $grey-color-dark !important; /* Ensures title color is set correctly */
+  margin-bottom: 0;
+  text-decoration: none;
+
+  @include media-query($on-palm) {
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+  }
+  &:hover {
+    color: $brand-color !important; /* Change to brand color */
+    font-size: 2.85rem; /* Slightly smaller on hover */
+  }
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between; /* or 'center' depending on your desired layout */
+  align-items: center; /* aligns vertically */
+  float: right;
+  line-height: $base-line-height * $base-font-size * 3;
+
+  .nav-trigger {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $text-color;
+    font-family: $heading-font-family;
+    line-height: $base-line-height;
+    font-size: 1.35rem;  // Increase font size
+    padding: 10px 10px;  // Increase padding for better touch targets
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      color: $brand-color;
+      font-size: 1.4rem;  // Slightly increase on hover
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 0;  // Moves it to the very top
+    left: 0; // Ensures it's aligned with the left edge
+    width: auto;
+    background-color: $background-color;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    padding: 10px;
+    z-index: 29;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; // Ensures even spacing
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;  // Centers the icon
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        padding: 0;
+
+      svg {
+        fill: $grey-color-dark;
+      }
+    }
+
+    input ~ .trigger {
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+    }
+
+    .page-link {
+      display: block;
+      padding: 10px;
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+.site-footer {
+  background-color: $grey-color-light; /* Light background */
+  color: darken($grey-color, 15%); /* Dark text */
+  padding: 10px 0;
+  text-align: center; /* Center the content */
+  font-size: 15px;
+
+  /* Add a dotted line at the top of the footer */
+  border-top: 2px dotted $brand-color; /* Adjust the color and thickness as needed */
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .footer-social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .footer-social-media a {
+    text-decoration: none;
+    color: $brand-color-shade;
+    font-size: 18px;
+
+    &:hover {
+      color: $brand-color; /* Highlight color */
+    }
+  }
+
+  p {
+    margin: 5px 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+
+/**
+ * Page content
+ */
+.page-content {
+  padding: $spacing-unit 0;
+  flex: 1;
+}
+
+.page-heading {
+  @include relative-font-size(2);
+}
+
+.post-list-heading {
+  @include relative-font-size(1.75);
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  @include relative-font-size(2.4);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+}
+
+/* Form container */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;  /* Light background color */
+  border-radius: 10px;         /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+
+  @include media-query($on-palm) {
+    padding: 1.5rem;  // Adjust padding on small screens
+    width: 90%;  // Make form more flexible
+  }
+}
+
+/* Label styles */
+label {
+  font-family: 'Roboto', sans-serif;  /* Ensure the font matches your site */
+  font-weight: 600;  /* Slightly bold */
+  font-size: 1rem;  /* Adjust font size to match site */
+  color: #333;  /* Dark color for visibility */
+}
+
+/* Input and textarea styling */
+input, textarea {
+  padding: 0.75rem;  /* Increased padding for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  // width: 100%;
+  font-family: 'Roboto', sans-serif;  /* Match site font */
+  font-size: 1rem;  /* Ensure the font size matches your site's text */
+  color: #333;  /* Make the text color consistent */
+}
+
+/* Input/textarea focus state */
+input:focus, textarea:focus {
+  border-color: $brand-color;  /* Change border color when focused (match site style) */
+  outline: none;
+}
+
+/* Button styling */
+button {
+  padding: 0.8rem;
+  background-color: $brand-color-tone; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'base-font-family', sans-serif;  /* Match site font */
+  font-size: 1.2rem;  /* Button text size */
+  // width: 100%;
+}
+
+button:hover {
+  background-color: $brand-color;  /* Slightly darker green on hover */
+}
+
+/* Button styling */
+post-button {
+  padding: 0.5rem;
+  background-color: $grey-color-light; 
+  color: $brand-color;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'header-font-family', sans-serif;  /* Match site font */
+  font-size: .99rem;  /* Button text size */
+  // width: 100%;
+}
+
+post-button:hover {
+  // background-color: $brand-color;  /* Slightly darker green on hover */
+  color: $brand-color;
+  border: dotted;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  padding: 0 20px;
+
+  .profile-image {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-right: 30px;
+    border: 1px outset $brand-color;
+
+    // Make image responsive on smaller screens
+    @include media-query($on-palm) {
+      width: 150px;
+      margin-right: 20px;
+    }
+  }
+
+  .profile-text {
+    max-width: 600px;
+    text-align: left;
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      color: #be5039;
+      margin-bottom: 15px;
+
+      // Adjust font size on smaller screens
+      @include media-query($on-palm) {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+
+    h3 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+
+      @include media-query($on-palm) {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      a {
+        color: $brand-color; // Adjust link color
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // On smaller screens, stack the image and text vertically
+  @include media-query($on-palm) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .profile-text {
+      max-width: 90%; // Allow text to use more space
+    }
+  }
+}
+
+
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+}
+
+.carousel-slide {
+  flex: 1 0 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+// Show slide based on radio input
+#img1:checked ~ .carousel-slides .img1,
+#img2:checked ~ .carousel-slides .img2,
+#img3:checked ~ .carousel-slides .img3 {
+  display: flex;
+}
+
+// Navigation dots
+.carousel-nav {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.carousel-nav label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#img1:checked ~ .carousel-nav label[for="img1"],
+#img2:checked ~ .carousel-nav label[for="img2"],
+#img3:checked ~ .carousel-nav label[for="img3"] {
+  background: #333;
+}
