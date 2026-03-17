@@ -4,7 +4,22 @@ layout: page
 permalink: /about/
 order: 1
 ---
-Hi! I'm Ginny, a data scientist, educator, writer, and fiber artist based in Brooklyn, New York.
+Hi! I'm Ginny, a technical writer, curriculum developer, and fiber artist based in Brooklyn, New York.
+
+Over the course of my career, I’ve designed, written, and led the development of nearly every type of adult learning experience, from the college physics lab manuals I wrote early on to the 24-week AI bootcamp I spearheaded as the leader of my curriculum team at edX. I’m passionate about making complex topics more accessible and engaging, whether through course design or hands-on workshops. I have degrees in physics and data science, as well as educational background in writing and literature. 
+
+These days, I focus on independent and consulting projects related to:
+
+- AI, especially as it intersects with communication and creativity.
+- Data science and data analysis.
+- Curriculum development and learning design.
+- Writing, both technical and creative.
+- Fiber arts, with an emphasis on crochet and knitting.
+
+When I’m not working, you might find me at a yoga class, practicing piano, reading in a neighborhood park, or ripping up and resewing thrift store finds.
+
+[Connect with me on LinkedIn](https://www.linkedin.com/in/ginnyperkey/) or [send me an email](contact.md) if you'd like to collaborate (or just say hi!).
+
 
 <!-- <div class="carousel-container">
   <input type="radio" name="carousel" id="img1" checked>
@@ -29,18 +44,3 @@ Hi! I'm Ginny, a data scientist, educator, writer, and fiber artist based in Bro
     <label for="img3"></label>
   </div>
 </div> -->
-
-Over the course of my career, I’ve designed, written, and led the development of nearly every type of adult learning experience, from the college physics lab manuals I wrote early on to the 24-week AI bootcamp I spearheaded as the leader of my curriculum team at edX. I’m passionate about making complex topics more accessible and engaging, whether through course design or hands-on workshops. I have degrees in physics and data science, as well as educational background in writing and literature. 
-
-These days, I focus on independent and consulting projects related to:
-
-- AI, especially as it intersects with communication and creativity.
-- Data science and data analysis.
-- Curriculum development and learning design.
-- Writing, both technical and creative.
-- Fiber arts, with an emphasis on crochet and knitting.
-
-When I’m not working, you might find me at a yoga class, practicing piano, reading in a neighborhood park, or ripping up and resewing thrift store finds.
-
-[Connect with me on LinkedIn](https://www.linkedin.com/in/ginnyperkey/) or [send me an email](contact.md) if you'd like to collaborate (or just say hi!).
-
