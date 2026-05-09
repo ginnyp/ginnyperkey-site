@@ -25,8 +25,8 @@ nav_exclude: true
 ## Helpful Videos
 
 - [Learn crochet as a beginner](https://www.woolandthegang.com/en/tutorial/how-to-learn-to-crochet-as-a-beginner)
-- [How to crochet a tube](https://www.woolandthegang.com/en/tutorial/how-to-do-tubular-crochet)
 - [How to hold your hook](https://www.woolandthegang.com/en/tutorial/how-to-crochet-holding-your-hook)
+- [How to crochet a tube](https://www.woolandthegang.com/en/tutorial/how-to-do-tubular-crochet)
 - [How to join a new ball of yarn](https://www.woolandthegang.com/en/tutorial/how-to-crochet-join-a-new-ball) - not a required skill, but helpful if you encounter a knot
 
 ---
@@ -37,7 +37,7 @@ nav_exclude: true
 
 1. Make a slip knot  
 - [How to make a slip knot](https://www.woolandthegang.com/en/tutorial/how-to-make-a-slip-knot)
-2. Chain 32 stitches  
+2. Chain 32 stitches (or until you reach the desired circumference of your cowl)
 - [Chain stitch tutorial](https://www.woolandthegang.com/en/tutorial/how-to-crochet-chain-stitch)
 3. Use a slip stitch to join the chain ends into a circle  
 - [Crochet a tube](https://www.woolandthegang.com/en/tutorial/how-to-do-tubular-crochet)  
@@ -69,4 +69,6 @@ nav_exclude: true
 
 ---
 
-<br>[Back to Crochet Workshop Resources main page](/crochet101/)
+<br>
+
+[Back to Crochet Workshop Resources main page](/crochet101/)

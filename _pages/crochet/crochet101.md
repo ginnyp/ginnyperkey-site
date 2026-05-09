@@ -21,6 +21,7 @@ Find the workshop you took in the list below to access the pattern, tutorials, a
 
 - [**Crochet 101: Chunky Cowl**](/crochet101/snood)
 - [**Crochet 101: Lil' Scarf**](/crochet101/lil-scarf)
+- [**Crochet 101: Lil' Bag**](/crochet101/lil-bag)
 - [**Crochet 102: Bandana**](/crochet101/bandana)
 <!-- - [**Tunisian Crochet 101**](crochet101/tunisian) -->
 

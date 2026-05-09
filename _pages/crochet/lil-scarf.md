@@ -29,7 +29,7 @@ nav_exclude: true
 
 **Get Started**
 
-1. Make a **slip knot**, chain (ch) 10, then make chain stitches until your chain is 4 inches long.
+1. Make a **slip knot**, then make chain stitches until your chain is 4 inches long (about 10-15 chains, depending on your tension).
 
    ***Note:** For a wider scarf, make a longer chain. For a narrower scarf, make a shorter chain.*
 
